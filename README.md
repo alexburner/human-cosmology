@@ -1,10 +1,6 @@
-# `download-selected`
+# `human-cosmology`
 
-A list of items, built with Vite + React + TypeScript
-
-https://alexburner.github.io/download-selected
-
-<img width="1041" alt="Screen Shot 2022-10-08 at 5 27 58 PM" src="https://user-images.githubusercontent.com/409114/194732146-beb6fb9f-743b-464a-96ad-1ce9a8a7facd.png">
+you are here — great chain of being
 
 ## Development
 
