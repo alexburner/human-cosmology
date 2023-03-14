@@ -3,19 +3,19 @@ module.exports = {
   ignorePatterns: ['**/*.js', '**/*.cjs'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    tsconfigRootDir: __dirname,
     project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
   },
   settings: { react: { version: 'detect' } },
+  plugins: ['@typescript-eslint'],
   extends: [
-    // Cascading priority: each subsequent ruleset overrides overlaps in previous
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:@typescript-eslint/strict',
-    'prettier', // Must be last: turns off any rules that prettier can handle
+    'prettier',
   ],
   rules: {
     // Allow vars like "_myVar"

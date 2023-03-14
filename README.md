@@ -1,17 +1,17 @@
-# `human-cosmology`
+# `enneagram-explorer`
 
-you are here — great chain of being
+Interactive Enneagram type explorer
 
 ## Development
 
 ```sh
-npm run dev      # run dev server
+npm run dev      # start dev server
 
-npm run eslint   # run eslint --fix
-npm run prettier # run prettier
-npm run tsc      # run tsc --noEmit
 npm run fix      # run eslint + prettier + tsc
+npm run eslint   # run eslint fix
+npm run prettier # run prettier fix
+npm run tsc      # run tsc type check
 
 npm run build    # build for production
-npm run preview  # preview prod build
+npm run preview  # local serve prod build
 ```

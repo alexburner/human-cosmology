@@ -4,8 +4,7 @@ import { App } from './App'
 import './index.css'
 
 const rootEl = document.getElementById('root')
-
-if (!rootEl) throw new Error('Missing #root element')
+if (!rootEl) throw new Error('Missing #root el')
 
 ReactDOM.createRoot(rootEl).render(
   <React.StrictMode>
