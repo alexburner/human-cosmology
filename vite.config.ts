@@ -16,6 +16,6 @@ export default defineConfig({
   ],
   // For github pages
   // -> https://vitejs.dev/guide/static-deploy.html#github-pages
-  base: '/enneagram-explorer/',
+  base: '/human-cosmology/',
   build: { outDir: 'docs' },
 })

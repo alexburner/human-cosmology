@@ -1,6 +1,6 @@
-# `enneagram-explorer`
+# `human-cosmology`
 
-Interactive Enneagram type explorer
+Nesting layers of emergent complexity
 
 ## Development
 
