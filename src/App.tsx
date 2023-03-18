@@ -13,9 +13,9 @@ export const App: FC = () => {
             key={layer.name}
             style={{ display: 'inline-block', width: `${CELL_WIDTH}px` }}
           >
-            <div style={{ textAlign: 'center', textTransform: 'lowercase' }}>
+            {/* <div style={{ textAlign: 'center', textTransform: 'lowercase' }}>
               {layer.name}
-            </div>
+            </div> */}
             <img src={layer.src} alt={layer.name} style={{ width: '100%' }} />
           </div>
         ))}
