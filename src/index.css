@@ -10,6 +10,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --whitespace: 30px;
+  --cell-width: 200px;
+  --height-ratio: 1.07;
 }
 
 html,
@@ -19,7 +23,7 @@ body {
 }
 
 .container {
-  width: 430px;
+  width: calc(calc(var(--cell-width) * 2) + var(--whitespace));
   margin: auto;
   padding: 80px 40px 120px;
 
@@ -38,12 +42,10 @@ body {
 }
 
 .media {
-  width: 200px;
-  height: calc(200px * 1.07);
+  width: var(--cell-width);
+  height: calc(var(--cell-width) * var(--height-ratio));
   position: relative;
   overflow: hidden;
-
-  margin-bottom: 0px;
 }
 
 .media img {
@@ -57,26 +59,11 @@ body {
 }
 
 .beginning {
-  margin-top: 60px;
+  margin-top: calc(var(--whitespace) * 1.25);
 }
 
 .beginning .media {
-  width: 250px;
-  height: calc(250px * 1.07);
+  --beginning-width: calc(var(--cell-width) * 1.25);
+  width: var(--beginning-width);
+  height: calc(var(--beginning-width) * var(--height-ratio));
 }
-
-/* .beginning {
-  width: 100%;
-  margin-top: 0px;
-
-  display: flex;
-  justify-content: center;
-}
-
-.beginning .media {
-  width: 100%;
-}
-
-.beginning .media img {
-  bottom: 0;
-} */
