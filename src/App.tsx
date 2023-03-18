@@ -1,25 +1,46 @@
 import { FC } from 'react'
 import { layers } from './data/layers'
 
-const CELL_WIDTH = 200
-// const CONTENT_WIDTH = CELL_WIDTH * layers.length
+const exceptions = new Set(['Biomolecules', 'Organs'])
+const beginning = layers[0]
 
-export const App: FC = () => {
-  return (
-    <div className="container">
-      <div className="content">
-        {layers.map((layer) => (
-          <div
-            key={layer.name}
-            style={{ display: 'inline-block', width: `${CELL_WIDTH}px` }}
-          >
-            {/* <div style={{ textAlign: 'center', textTransform: 'lowercase' }}>
-              {layer.name}
-            </div> */}
-            <img src={layer.src} alt={layer.name} style={{ width: '100%' }} />
-          </div>
-        ))}
+if (!beginning) throw new Error('Unreachable')
+
+export const App: FC = () => (
+  <div className="container">
+    <div className="columns">
+      <div className="column">
+        {layers
+          .filter((_, i) => i > 0 && i < 9)
+          .reverse()
+          .map((layer) => (
+            <div className="media" key={layer.name}>
+              <img
+                className={exceptions.has(layer.name) ? 'exception' : ''}
+                src={layer.src}
+                alt={layer.name}
+              />
+            </div>
+          ))}
+      </div>
+      <div className="column">
+        {layers
+          .filter((_, i) => i > 8)
+          .map((layer) => (
+            <div className="media" key={layer.name}>
+              <img
+                className={exceptions.has(layer.name) ? 'exception' : ''}
+                src={layer.src}
+                alt={layer.name}
+              />
+            </div>
+          ))}
       </div>
     </div>
-  )
-}
+    <div className="beginning">
+      <div className="media">
+        <img className="exception" src={beginning.src} alt={beginning.name} />
+      </div>
+    </div>
+  </div>
+)

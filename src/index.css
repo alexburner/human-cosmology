@@ -17,3 +17,66 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.container {
+  width: 430px;
+  margin: auto;
+  padding: 80px 40px 120px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.columns {
+  display: flex;
+  gap: 30px;
+}
+
+.column {
+  width: 50%;
+}
+
+.media {
+  width: 200px;
+  height: calc(200px * 1.07);
+  position: relative;
+  overflow: hidden;
+
+  margin-bottom: 0px;
+}
+
+.media img {
+  width: 100%;
+  position: absolute;
+}
+
+.media img:not(.exception) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.beginning {
+  margin-top: 60px;
+}
+
+.beginning .media {
+  width: 250px;
+  height: calc(250px * 1.07);
+}
+
+/* .beginning {
+  width: 100%;
+  margin-top: 0px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.beginning .media {
+  width: 100%;
+}
+
+.beginning .media img {
+  bottom: 0;
+} */
