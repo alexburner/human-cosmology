@@ -22,11 +22,11 @@ export const layers: Layer[] = [
   },
   {
     name: 'Planets',
-    src: 'https://i.imgur.com/ZnJhnPll.png',
+    src: 'https://i.imgur.com/a4BztpZ.png',
   },
   {
     name: 'Geomes',
-    src: 'https://i.imgur.com/iYgeYsCl.jpg',
+    src: 'https://i.imgur.com/YgftLy3.jpg',
   },
   {
     name: 'Biomes',
@@ -34,7 +34,7 @@ export const layers: Layer[] = [
   },
   {
     name: 'Organ-isms',
-    src: 'https://i.imgur.com/uoyo8QXl.jpg',
+    src: 'https://i.imgur.com/STywQKL.jpg',
   },
   {
     name: 'Conscious Groups',
@@ -58,7 +58,7 @@ export const layers: Layer[] = [
   },
   {
     name: 'Molecules',
-    src: 'https://i.imgur.com/3jSBw2Cl.png',
+    src: 'https://i.imgur.com/KpfLtLO.png',
   },
   {
     name: 'Atoms',

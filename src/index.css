@@ -13,7 +13,6 @@
 
   --whitespace: 30px;
   --cell-width: 200px;
-  --height-ratio: 1.07;
 }
 
 html,
@@ -43,7 +42,7 @@ body {
 
 .media {
   width: var(--cell-width);
-  height: calc(var(--cell-width) * var(--height-ratio));
+  height: calc(var(--cell-width) * 1.07);
   position: relative;
   overflow: hidden;
 }
@@ -59,11 +58,15 @@ body {
 }
 
 .beginning {
-  margin-top: calc(var(--whitespace) * 1.25);
+  margin-top: calc(var(--whitespace) * 1.5);
 }
 
 .beginning .media {
   --beginning-width: calc(var(--cell-width) * 1.25);
   width: var(--beginning-width);
-  height: calc(var(--beginning-width) * var(--height-ratio));
+  height: calc(var(--beginning-width) * 1.1);
+}
+
+.beginning .media img {
+  bottom: 0;
 }
