@@ -6,70 +6,70 @@ interface Layer {
 export const layers: Layer[] = [
   {
     name: 'Big Bang',
-    src: '',
+    src: 'https://i.imgur.com/O8jn5ecl.jpg',
   },
   {
     name: 'Cosmic Web',
-    src: '',
+    src: 'https://i.imgur.com/jNZgrVbl.jpg',
   },
   {
     name: 'Galaxies',
-    src: '',
+    src: 'https://i.imgur.com/WstGqbml.jpg',
   },
   {
     name: 'Stars',
-    src: '',
+    src: 'https://i.imgur.com/YqSq9pAl.png',
   },
   {
     name: 'Planets',
-    src: '',
+    src: 'https://i.imgur.com/ZnJhnPll.png',
   },
   {
     name: 'Geomes',
-    src: '',
+    src: 'https://i.imgur.com/iYgeYsCl.jpg',
   },
   {
     name: 'Biomes',
-    src: '',
+    src: 'https://i.imgur.com/PndOZkHl.jpg',
   },
   {
     name: 'Organ-isms',
-    src: '',
+    src: 'https://i.imgur.com/uoyo8QXl.jpg',
   },
   {
     name: 'Conscious Groups',
-    src: '',
+    src: 'https://i.imgur.com/THRZGmdl.jpg',
   },
   {
     name: 'Conscious Individuals',
-    src: '',
+    src: 'https://i.imgur.com/QsglWCnl.png',
   },
   {
     name: 'Organs',
-    src: '',
+    src: 'https://i.imgur.com/30FyINjl.png',
   },
   {
     name: 'Cells',
-    src: '',
+    src: 'https://i.imgur.com/zVJ5MGql.jpg',
   },
   {
     name: 'Biomolecules',
-    src: '',
+    src: 'https://i.imgur.com/oLco4rPl.jpg',
   },
   {
     name: 'Molecules',
-    src: '',
+    src: 'https://i.imgur.com/3jSBw2Cl.png',
   },
   {
     name: 'Atoms',
-    src: '',
+    src: 'https://i.imgur.com/pwP8enal.png',
   },
   {
     name: 'Particles',
-    src: '',
+    src: 'https://i.imgur.com/Ukk48h2l.png',
   },
   {
     name: 'Quantum Foam',
-    src: '',
+    src: 'https://i.imgur.com/XR10nQcl.jpg',
   },
 ]

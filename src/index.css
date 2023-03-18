@@ -2,8 +2,8 @@
   font-family: sans-serif;
 
   color-scheme: light dark;
-  color: #222;
-  background-color: #eee;
+  color: #111;
+  background-color: #fff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -35,16 +35,17 @@ body {
   padding: 10px;
 
   text-align: center;
-
-  border: 1px solid #ddd;
 }
 
 .image {
   width: 200px;
-  height: 200px;
-  background-color: #ccc;
+}
+
+.image img {
+  width: 100%;
 }
 
 .label {
+  padding-bottom: 10px;
   text-transform: lowercase;
 }
