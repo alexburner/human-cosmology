@@ -1,19 +1,25 @@
 import { FC } from 'react'
 import { layers } from './data/layers'
 
-export const App: FC = () => (
-  <div className="scroll-container">
-    <div className="scroll-content">
-      <div className="levels">
+const CELL_WIDTH = 200
+// const CONTENT_WIDTH = CELL_WIDTH * layers.length
+
+export const App: FC = () => {
+  return (
+    <div className="container">
+      <div className="content">
         {layers.map((layer) => (
-          <div key={layer.name} className="level">
-            <div className="label">{layer.name}</div>
-            <div className="image">
-              <img src={layer.src} alt={layer.name} />
+          <div
+            key={layer.name}
+            style={{ display: 'inline-block', width: `${CELL_WIDTH}px` }}
+          >
+            <div style={{ textAlign: 'center', textTransform: 'lowercase' }}>
+              {layer.name}
             </div>
+            <img src={layer.src} alt={layer.name} style={{ width: '100%' }} />
           </div>
         ))}
       </div>
     </div>
-  </div>
-)
+  )
+}
