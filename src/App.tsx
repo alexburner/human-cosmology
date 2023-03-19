@@ -32,7 +32,7 @@ export const App: FC = () => (
 )
 
 const Cell: FC<{ layer: Layer }> = ({ layer }) => (
-  <div className="cell">
+  <div className={`cell ${classerize(layer.name)}`}>
     <div className="media">
       <img
         className={exceptions.has(layer.name) ? 'exception' : ''}
@@ -43,3 +43,5 @@ const Cell: FC<{ layer: Layer }> = ({ layer }) => (
     <div className="label">{layer.name}</div>
   </div>
 )
+
+const classerize = (text: string) => text.toLowerCase().replace(' ', '-')

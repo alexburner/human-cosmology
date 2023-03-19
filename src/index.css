@@ -43,19 +43,13 @@ body {
 
 .cell {
   position: relative;
+  height: calc(var(--media-width) * 1.35);
   background: #fff;
-
-  height: calc(var(--media-width) * 1.4);
+  /* border: 1px solid red; */
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  /* border: 1px solid red; */
-}
-
-.cell:not(:last-child) {
-  border-bottom: none;
 }
 
 .media {
@@ -74,18 +68,31 @@ body {
   text-align: center;
 }
 
-/* special for beginning */
+/* special crops */
+.cell.biomolecules .media {
+  height: calc(var(--media-width) * 1);
+}
+.cell.galaxies .media {
+  height: calc(var(--media-width) * 1);
+}
+.cell.galaxies .media img {
+  margin-top: -10%;
+}
 
+/* special for conscious row */
+.column .cell:first-child {
+  margin-bottom: calc(var(--whitespace) * 1);
+}
+
+/* special for big bang */
 .beginning {
   margin-top: calc(var(--whitespace) * 2);
 }
-
 .beginning .media {
   --beginning-width: calc(var(--media-width) * 1);
   width: var(--beginning-width);
   height: calc(var(--beginning-width) * 1.1);
 }
-
 .beginning .media img {
   bottom: 0;
 }
