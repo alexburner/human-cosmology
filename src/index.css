@@ -34,7 +34,7 @@ body {
 
 .columns {
   display: flex;
-  gap: calc(var(--whitespace) * 1);
+  gap: calc(var(--whitespace) * 4);
 }
 
 .column {
@@ -43,11 +43,15 @@ body {
 
 .cell {
   position: relative;
-  /* margin-bottom: calc(var(--whitespace) * 0.5); */
-  padding: calc(var(--whitespace) * 1.5);
-  padding-bottom: calc(var(--whitespace) * 1.25);
   background: #fff;
-  /* border: 1px solid #aaa; */
+
+  height: calc(var(--media-width) * 1.4);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* border: 1px solid red; */
 }
 
 .cell:not(:last-child) {
@@ -56,19 +60,12 @@ body {
 
 .media {
   width: var(--media-width);
-  height: calc(var(--media-width) * 1);
   position: relative;
   overflow: hidden;
 }
 
 .media img {
   width: 100%;
-  position: absolute;
-}
-
-.media img:not(.exception) {
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .label {
@@ -77,17 +74,10 @@ body {
   text-align: center;
 }
 
-/* special for columns */
-
-.columns .cell:first-child {
-  margin-bottom: calc(var(--whitespace) * 1);
-  /* border: 1px solid #aaa; */
-}
-
 /* special for beginning */
 
 .beginning {
-  margin-top: calc(var(--whitespace) * 1.5);
+  margin-top: calc(var(--whitespace) * 2);
 }
 
 .beginning .media {
