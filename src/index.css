@@ -33,6 +33,7 @@ body {
 }
 
 .row {
+  position: relative;
   margin-bottom: calc(var(--whitespace) * 3);
 
   display: flex;
@@ -41,7 +42,6 @@ body {
 
 .cell {
   position: relative;
-  width: 50%;
   background: #fff;
 
   /* border: 1px solid red; */
@@ -62,8 +62,18 @@ body {
 }
 
 .label {
+  position: relative;
   padding-top: 6px;
   text-transform: lowercase;
+  text-align: center;
+}
+
+.label::after {
+  content: '↑';
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  right: 0;
   text-align: center;
 }
 
@@ -91,13 +101,8 @@ body {
 
 /* special for big bang */
 .beginning {
-  margin-top: calc(var(--whitespace) * 2);
+  margin-top: calc(var(--whitespace) * 3);
 }
-.beginning .media {
-  --beginning-width: calc(var(--media-width) * 1);
-  width: var(--beginning-width);
-  height: calc(var(--beginning-width) * 1.1);
-}
-.beginning .media img {
-  bottom: 0;
+.beginning .label::after {
+  content: '';
 }
