@@ -8,7 +8,7 @@ if (!beginning) throw new Error('Unreachable')
 
 export const App: FC = () => (
   <div className="container">
-    <h1>You Are Here, Now</h1>
+    <h1>You Are Here</h1>
     <div className="columns">
       <div className="column left">
         {layers
