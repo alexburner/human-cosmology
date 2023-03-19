@@ -9,7 +9,7 @@ if (!beginning) throw new Error('Unreachable')
 export const App: FC = () => (
   <div className="container">
     <div className="columns">
-      <div className="column">
+      <div className="column left">
         {layers
           .filter((_, i) => i > 0 && i < 9)
           .reverse()
@@ -20,10 +20,11 @@ export const App: FC = () => (
                 src={layer.src}
                 alt={layer.name}
               />
+              <div className="label">{layer.name}</div>
             </div>
           ))}
       </div>
-      <div className="column">
+      <div className="column right">
         {layers
           .filter((_, i) => i > 8)
           .map((layer) => (
@@ -33,6 +34,7 @@ export const App: FC = () => (
                 src={layer.src}
                 alt={layer.name}
               />
+              <div className="label">{layer.name}</div>
             </div>
           ))}
       </div>
@@ -40,6 +42,8 @@ export const App: FC = () => (
     <div className="beginning">
       <div className="media">
         <img className="exception" src={beginning.src} alt={beginning.name} />
+        <div className="label left">Big</div>
+        <div className="label right">Bang</div>
       </div>
     </div>
   </div>

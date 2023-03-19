@@ -44,7 +44,7 @@ body {
   width: var(--cell-width);
   height: calc(var(--cell-width) * 1.07);
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .media img {
@@ -56,6 +56,25 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+
+.label {
+  position: absolute;
+  text-transform: lowercase;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left .label {
+  right: calc(100% + var(--whitespace));
+  text-align: right;
+}
+
+.right .label {
+  left: calc(100% + var(--whitespace));
+  text-align: left;
+}
+
+/* special for beginning */
 
 .beginning {
   margin-top: calc(var(--whitespace) * 1.5);
@@ -69,4 +88,14 @@ body {
 
 .beginning .media img {
   bottom: 0;
+}
+
+.beginning .label.left {
+  right: calc(100% + var(--whitespace));
+  text-align: right;
+}
+
+.beginning .label.right {
+  left: calc(100% + var(--whitespace));
+  text-align: left;
 }
