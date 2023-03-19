@@ -12,7 +12,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --whitespace: 20px;
+  --whitespace: 15px;
   --media-width: 200px;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  width: calc(calc(var(--media-width) * 2) + var(--whitespace));
+  width: 509px; /* hacks lol */
   margin: auto;
   padding: 20px 40px 80px;
 
@@ -51,19 +51,15 @@ h1 {
 
 .cell {
   position: relative;
-  margin-bottom: calc(var(--whitespace) * 1);
-  padding: 10px;
+  /* margin-bottom: calc(var(--whitespace) * 0.5); */
+  padding: calc(var(--whitespace) * 1.5);
+  padding-bottom: calc(var(--whitespace) * 1.25);
   background: #fff;
-  border: 1px dotted #888;
+  border: 1px solid #aaa;
 }
 
-.cell::after {
-  content: '↑';
-  position: absolute;
-  text-align: center;
-  left: 0;
-  right: 0;
-  top: 100%;
+.cell:not(:last-child) {
+  border-bottom: none;
 }
 
 .media {
@@ -84,7 +80,7 @@ h1 {
 }
 
 .label {
-  padding-top: 5px;
+  padding-top: 6px;
   text-transform: lowercase;
   text-align: center;
 }
@@ -92,11 +88,7 @@ h1 {
 /* special for beginning */
 
 .beginning {
-  position: relative;
-}
-
-.beginning .cell::after {
-  content: '';
+  margin-top: calc(var(--whitespace) * 1.5);
 }
 
 .beginning .media {
