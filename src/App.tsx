@@ -1,30 +1,20 @@
 import { FC } from 'react'
-import { Layer, layers } from './data/layers'
-
-const exceptions = new Set(['Biomolecules', 'Organs'])
-const beginning = layers[0]
-
-if (!beginning) throw new Error('Unreachable')
+import { beginning, emergeOutOf, emergeWithin, Layer } from './data/layers'
 
 export const App: FC = () => (
   <div className="container">
-    <div className="columns">
-      <div className="column left">
-        {layers
-          .filter((_, i) => i > 0 && i < 9)
-          .reverse()
-          .map((layer) => (
-            <Cell key={layer.name} layer={layer} />
-          ))}
-      </div>
-      <div className="column right">
-        {layers
-          .filter((_, i) => i > 8)
-          .map((layer) => (
-            <Cell key={layer.name} layer={layer} />
-          ))}
-      </div>
-    </div>
+    {new Array(8).fill(null).map((_, i) => {
+      const index = 8 - i - 1
+      const layerIn = emergeWithin[index]
+      const layerOut = emergeOutOf[index]
+      if (!layerIn || !layerOut) throw new Error('Unreachable')
+      return (
+        <div key={i} className="row">
+          <Cell layer={layerIn} />
+          <Cell layer={layerOut} />
+        </div>
+      )
+    })}
     <div className="beginning">
       <Cell layer={beginning} />
     </div>
@@ -34,11 +24,7 @@ export const App: FC = () => (
 const Cell: FC<{ layer: Layer }> = ({ layer }) => (
   <div className={`cell ${classerize(layer.name)}`}>
     <div className="media">
-      <img
-        className={exceptions.has(layer.name) ? 'exception' : ''}
-        src={layer.src}
-        alt={layer.name}
-      />
+      <img src={layer.src} alt={layer.name} />
     </div>
     <div className="label">{layer.name}</div>
   </div>
