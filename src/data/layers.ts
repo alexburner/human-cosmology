@@ -33,7 +33,7 @@ export const layers: Layer[] = [
     src: 'https://i.imgur.com/PndOZkHl.jpg',
   },
   {
-    name: 'Organ-isms',
+    name: 'Organisms',
     src: 'https://i.imgur.com/STywQKL.jpg',
   },
   {

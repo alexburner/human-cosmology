@@ -1,5 +1,6 @@
 :root {
-  font-family: sans-serif;
+  font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans',
+    Arial, sans-serif;
 
   color-scheme: light dark;
   color: #111;
@@ -24,16 +25,24 @@ body {
 .container {
   width: calc(calc(var(--media-width) * 2) + var(--whitespace));
   margin: auto;
-  padding: 80px 40px 120px;
+  padding: 20px 40px 80px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+h1 {
+  margin: 2rem 0 2rem;
+  text-transform: lowercase;
+  font-family: serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
 .columns {
   display: flex;
-  gap: var(--whitespace);
+  gap: calc(var(--whitespace) * 1);
 }
 
 .column {
@@ -43,8 +52,8 @@ body {
 .cell {
   margin-bottom: var(--whitespace);
   padding: 10px;
-
-  border: 1px solid #333;
+  background: #fff;
+  border: 1px solid #888;
 }
 
 .media {
@@ -73,11 +82,12 @@ body {
 /* special for beginning */
 
 .beginning {
-  margin-top: calc(var(--whitespace) * 2);
+  position: relative;
+  margin-top: calc(var(--whitespace) * 3);
 }
 
 .beginning .media {
-  --beginning-width: calc(var(--media-width) * 1.25);
+  --beginning-width: calc(var(--media-width) * 1.5);
   width: var(--beginning-width);
   height: calc(var(--beginning-width) * 1.1);
 }
