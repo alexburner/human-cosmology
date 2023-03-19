@@ -32,14 +32,6 @@ body {
   align-items: center;
 }
 
-h1 {
-  margin: 2rem 0 2rem;
-  text-transform: lowercase;
-  font-family: serif;
-  font-weight: normal;
-  font-style: italic;
-}
-
 .columns {
   display: flex;
   gap: calc(var(--whitespace) * 1);
@@ -55,7 +47,7 @@ h1 {
   padding: calc(var(--whitespace) * 1.5);
   padding-bottom: calc(var(--whitespace) * 1.25);
   background: #fff;
-  border: 1px solid #aaa;
+  /* border: 1px solid #aaa; */
 }
 
 .cell:not(:last-child) {
@@ -85,6 +77,13 @@ h1 {
   text-align: center;
 }
 
+/* special for columns */
+
+.columns .cell:first-child {
+  margin-bottom: calc(var(--whitespace) * 1);
+  /* border: 1px solid #aaa; */
+}
+
 /* special for beginning */
 
 .beginning {
@@ -92,7 +91,7 @@ h1 {
 }
 
 .beginning .media {
-  --beginning-width: calc(var(--media-width) * 1.75);
+  --beginning-width: calc(var(--media-width) * 1);
   width: var(--beginning-width);
   height: calc(var(--beginning-width) * 1.1);
 }
