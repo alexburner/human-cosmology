@@ -26,20 +26,14 @@ export const App: FC = () => (
       </div>
     </div>
     <div className="beginning">
-      <div className="cell">
-        <div className="overflow-hidden">
-          <img className="exception" src={beginning.src} alt={beginning.name} />
-        </div>
-        <div className="label left">Big</div>
-        <div className="label right">Bang</div>
-      </div>
+      <Cell layer={beginning} />
     </div>
   </div>
 )
 
 const Cell: FC<{ layer: Layer }> = ({ layer }) => (
   <div className="cell">
-    <div className="overflow-hidden">
+    <div className="media">
       <img
         className={exceptions.has(layer.name) ? 'exception' : ''}
         src={layer.src}
