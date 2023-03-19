@@ -25,7 +25,7 @@ body {
 .container {
   width: 509px; /* hacks lol */
   margin: auto;
-  padding: calc(var(--whitespace) * 3) 40px 120px;
+  padding: 80px 40px 120px;
 
   display: flex;
   flex-direction: column;
@@ -38,12 +38,6 @@ body {
 
   display: flex;
   gap: calc(var(--whitespace) * 4);
-}
-
-.row.emerges div {
-  position: relative;
-  width: calc(var(--media-width) * 0.8);
-  text-align: center;
 }
 
 .cell {
@@ -74,18 +68,13 @@ body {
   text-align: center;
 }
 
-.row:not(.last) .label::after {
+.label::after {
   content: '↑';
   position: absolute;
   bottom: -1.5rem;
   left: 0;
   right: 0;
   text-align: center;
-}
-
-/* special for big bang */
-.beginning {
-  margin-top: calc(var(--whitespace) * 1);
 }
 
 /* special crops */
@@ -103,4 +92,17 @@ body {
 }
 .cell.biomolecules .media {
   height: calc(var(--media-width) * 1);
+}
+
+/* special for conscious row */
+.column .cell:first-child {
+  margin-bottom: calc(var(--whitespace) * 1);
+}
+
+/* special for big bang */
+.beginning {
+  margin-top: calc(var(--whitespace) * 3);
+}
+.beginning .label::after {
+  content: '';
 }
