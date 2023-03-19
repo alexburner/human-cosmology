@@ -1,4 +1,4 @@
-interface Layer {
+export interface Layer {
   name: string
   src: string
 }
