@@ -12,7 +12,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --whitespace: 10px;
+  --whitespace: 20px;
   --media-width: 200px;
 }
 
@@ -50,10 +50,20 @@ h1 {
 }
 
 .cell {
-  margin-bottom: var(--whitespace);
+  position: relative;
+  margin-bottom: calc(var(--whitespace) * 1);
   padding: 10px;
   background: #fff;
-  border: 1px solid #888;
+  border: 1px dotted #888;
+}
+
+.cell::after {
+  content: '↑';
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 100%;
 }
 
 .media {
@@ -83,11 +93,14 @@ h1 {
 
 .beginning {
   position: relative;
-  margin-top: calc(var(--whitespace) * 3);
+}
+
+.beginning .cell::after {
+  content: '';
 }
 
 .beginning .media {
-  --beginning-width: calc(var(--media-width) * 1.5);
+  --beginning-width: calc(var(--media-width) * 1.75);
   width: var(--beginning-width);
   height: calc(var(--beginning-width) * 1.1);
 }
