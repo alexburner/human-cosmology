@@ -77,7 +77,15 @@ body {
   text-align: center;
 }
 
-/* special crops */
+/* big bang */
+.beginning {
+  margin-top: calc(var(--whitespace) * 2);
+}
+.beginning .label::after {
+  content: '';
+}
+
+/* crops */
 .cell.galaxies .media {
   height: calc(var(--media-width) * 1);
 }
@@ -92,17 +100,4 @@ body {
 }
 .cell.biomolecules .media {
   height: calc(var(--media-width) * 1);
-}
-
-/* special for conscious row */
-.column .cell:first-child {
-  margin-bottom: calc(var(--whitespace) * 1);
-}
-
-/* special for big bang */
-.beginning {
-  margin-top: calc(var(--whitespace) * 3);
-}
-.beginning .label::after {
-  content: '';
 }
