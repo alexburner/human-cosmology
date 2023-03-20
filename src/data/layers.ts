@@ -22,7 +22,7 @@ export const emergeWithin: Layer[] = [
   },
   {
     name: 'Geomes',
-    src: 'https://i.imgur.com/YgftLy3.jpg',
+    src: 'https://i.imgur.com/McQ7aIB.png',
   },
   {
     name: 'Biomes',

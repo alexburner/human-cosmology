@@ -87,18 +87,21 @@ body {
 }
 
 /* crops */
+
 .cell.galaxies .media {
   height: calc(var(--media-width) * 1);
 }
 .cell.galaxies .media img {
   margin-top: -10%;
 }
+
 .cell.organs .media {
   height: calc(var(--media-width) * 1.31);
 }
 .cell.organs .media img {
   margin-top: -4%;
 }
+
 .cell.biomolecules .media {
-  height: calc(var(--media-width) * 1);
+  height: calc(var(--media-width) * 0.92);
 }
