@@ -80,7 +80,7 @@ body {
 
 /* big bang */
 .beginning {
-  margin-top: calc(var(--whitespace) * 2);
+  margin-top: calc(var(--whitespace) * 3);
 }
 .beginning .label::after {
   content: '';
