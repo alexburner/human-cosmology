@@ -29,7 +29,7 @@ export const emergeWithin: Layer[] = [
     src: 'https://i.imgur.com/PndOZkHl.jpg',
   },
   {
-    name: 'Organisms',
+    name: 'Organ-isms',
     src: 'https://i.imgur.com/x0NHI6a.jpg',
   },
   {
@@ -53,7 +53,7 @@ export const emergeOutOf: Layer[] = [
   },
   {
     name: 'Molecules',
-    src: 'https://i.imgur.com/KpfLtLO.png',
+    src: 'https://i.imgur.com/2fs3b6s.png',
   },
   {
     name: 'Biomolecules',

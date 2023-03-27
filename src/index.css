@@ -87,30 +87,36 @@ body {
   tuning
 */
 
-.organisms .media {
-  transform: scale(1.12);
-  right: -0.6rem;
+.organ-isms .media {
+  transform: scale(1.17);
+  right: -0.7rem;
 }
 
 .organs .media {
   margin-top: -4%;
-  transform: scale(0.84);
+  transform: scale(0.87);
   height: calc(var(--media-width) * 1.31);
 }
 .organs .media img {
   margin-top: -4%;
 }
 
-.geomes .media {
-  transform: scale(1.12);
-  right: -0.3rem;
-  bottom: -0.5rem;
-}
-
 .biomes .media {
   height: calc(var(--media-width) * 0.81);
   transform: scale(1.1);
   right: -0.2rem;
+}
+
+.cells .media {
+  height: calc(var(--media-width) * 0.81);
+  transform: scale(1.1);
+  right: -0.2rem;
+}
+
+.geomes .media {
+  transform: scale(1.1);
+  right: -0.3rem;
+  bottom: -0.5rem;
 }
 
 .biomolecules .media {
@@ -140,6 +146,7 @@ body {
 .quantum-foam .media {
   transform: scale(1.15);
   left: -0.5rem;
+  bottom: -0.2rem;
 }
 
 .beginning {
