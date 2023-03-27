@@ -23,8 +23,10 @@ export const App: FC = () => (
 
 const Cell: FC<{ layer: Layer }> = ({ layer }) => (
   <div className={`cell ${classerize(layer.name)}`}>
-    <div className="media">
-      <img src={layer.src} alt={layer.name} />
+    <div className="membrane">
+      <div className="media">
+        <img src={layer.src} alt={layer.name} />
+      </div>
     </div>
     <div className="label">{layer.name}</div>
   </div>

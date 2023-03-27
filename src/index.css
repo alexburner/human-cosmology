@@ -34,10 +34,10 @@ body {
 
 .row {
   position: relative;
-  margin-bottom: calc(var(--whitespace) * 3);
+  margin-bottom: calc(var(--whitespace) * 1.2);
 
   display: flex;
-  gap: calc(var(--whitespace) * 4);
+  gap: calc(var(--whitespace) * 12);
 }
 
 .cell {
@@ -63,45 +63,61 @@ body {
 
 .label {
   position: relative;
-  padding-top: 6px;
+  padding-top: 2px;
   text-transform: lowercase;
   text-align: center;
 }
 
-.label::after {
-  content: '↑';
-  position: absolute;
-  bottom: -1.75rem;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 1.5rem;
-}
+/*
+  tuning
+*/
 
-/* big bang */
-.beginning {
-  margin-top: calc(var(--whitespace) * 3);
-}
-.beginning .label::after {
-  content: '';
-}
-
-/* crops */
-
-.cell.galaxies .media {
-  height: calc(var(--media-width) * 1);
-}
-.cell.galaxies .media img {
-  margin-top: -10%;
-}
-
-.cell.organs .media {
-  height: calc(var(--media-width) * 1.31);
-}
-.cell.organs .media img {
+.organisms .label {
   margin-top: -4%;
 }
 
-.cell.biomolecules .media {
+.organs .media {
+  margin-top: -4%;
+  transform: scale(0.84);
+  height: calc(var(--media-width) * 1.31);
+}
+.organs .media img {
+  margin-top: -4%;
+}
+.organs .label {
+  margin-top: -10%;
+}
+
+.biomes .media {
+  height: calc(var(--media-width) * 0.81);
+}
+.biomes .label {
+  margin-top: 2%;
+}
+
+.biomolecules .media {
   height: calc(var(--media-width) * 0.92);
+}
+
+.conscious-individuals .media img {
+  transform: scale(0.99);
+}
+
+.conscious-groups .media img {
+  transform: scale(1.5);
+}
+
+.galaxies .media {
+  height: calc(var(--media-width) * 1);
+}
+.galaxies .media img {
+  margin-top: -10%;
+}
+
+.beginning {
+  margin-top: calc(var(--whitespace) * 4);
+}
+.beginning .membrane {
+  background: black;
+  padding: 10px;
 }
