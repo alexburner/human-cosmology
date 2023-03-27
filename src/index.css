@@ -37,18 +37,18 @@ body {
   margin-bottom: calc(var(--whitespace) * 1.2);
 
   display: flex;
-  gap: calc(var(--whitespace) * 12);
+  gap: 4rem;
 }
 
 .cell {
   position: relative;
   background: #fff;
 
-  /* border: 1px solid red; */
-
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  /* border: 1px solid red; */
 }
 
 .media {
@@ -62,18 +62,34 @@ body {
 }
 
 .label {
-  position: relative;
-  padding-top: 2px;
+  width: 120px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
   text-transform: lowercase;
   text-align: center;
+
+  --label-padding: 2.5rem;
+}
+
+.left .label {
+  right: calc(100% + var(--label-padding));
+  text-align: right;
+}
+
+.right .label {
+  left: calc(100% + var(--label-padding));
+  text-align: left;
 }
 
 /*
   tuning
 */
 
-.organisms .label {
-  margin-top: -4%;
+.organisms .media {
+  transform: scale(1.12);
+  right: -0.6rem;
 }
 
 .organs .media {
@@ -84,19 +100,22 @@ body {
 .organs .media img {
   margin-top: -4%;
 }
-.organs .label {
-  margin-top: -10%;
+
+.geomes .media {
+  transform: scale(1.12);
+  right: -0.3rem;
+  bottom: -0.5rem;
 }
 
 .biomes .media {
   height: calc(var(--media-width) * 0.81);
-}
-.biomes .label {
-  margin-top: 2%;
+  transform: scale(1.1);
+  right: -0.2rem;
 }
 
 .biomolecules .media {
   height: calc(var(--media-width) * 0.92);
+  top: -0.4rem;
 }
 
 .conscious-individuals .media img {
@@ -114,10 +133,24 @@ body {
   margin-top: -10%;
 }
 
+.particles .media {
+  transform: scale(1.05);
+}
+
+.quantum-foam .media {
+  transform: scale(1.15);
+  left: -0.5rem;
+}
+
 .beginning {
-  margin-top: calc(var(--whitespace) * 4);
+  margin-top: calc(var(--whitespace) * 2.5);
 }
 .beginning .membrane {
   background: black;
   padding: 10px;
+}
+.beginning .label {
+  width: 100%;
+  top: calc(100% + 1.5rem);
+  text-align: center;
 }

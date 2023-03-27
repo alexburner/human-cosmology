@@ -30,7 +30,7 @@ export const emergeWithin: Layer[] = [
   },
   {
     name: 'Organisms',
-    src: 'https://i.imgur.com/STywQKL.jpg',
+    src: 'https://i.imgur.com/x0NHI6a.jpg',
   },
   {
     name: 'Conscious Groups',
@@ -45,7 +45,7 @@ export const emergeOutOf: Layer[] = [
   },
   {
     name: 'Particles',
-    src: 'https://i.imgur.com/Ukk48h2l.png',
+    src: 'https://i.imgur.com/pbVA6kE.jpg',
   },
   {
     name: 'Atoms',
@@ -61,7 +61,7 @@ export const emergeOutOf: Layer[] = [
   },
   {
     name: 'Cells',
-    src: 'https://i.imgur.com/zVJ5MGql.jpg',
+    src: 'https://i.imgur.com/jb0R6PE.jpg',
   },
   {
     name: 'Organs',

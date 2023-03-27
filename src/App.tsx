@@ -10,8 +10,8 @@ export const App: FC = () => (
       if (!layerIn || !layerOut) throw new Error('Unreachable')
       return (
         <div key={i} className="row">
-          <Cell layer={layerIn} />
-          <Cell layer={layerOut} />
+          <Cell side="left" layer={layerIn} />
+          <Cell side="right" layer={layerOut} />
         </div>
       )
     })}
@@ -21,8 +21,11 @@ export const App: FC = () => (
   </div>
 )
 
-const Cell: FC<{ layer: Layer }> = ({ layer }) => (
-  <div className={`cell ${classerize(layer.name)}`}>
+const Cell: FC<{
+  layer: Layer
+  side?: 'left' | 'right'
+}> = ({ layer, side = '' }) => (
+  <div className={`cell ${classerize(layer.name)} ${side}`}>
     <div className="membrane">
       <div className="media">
         <img src={layer.src} alt={layer.name} />
