@@ -3,8 +3,11 @@ import { beginning, emergeOutOf, emergeWithin, Layer } from './data/layers'
 
 export const App: FC = () => (
   <div className="container">
+    <div className="beginning">
+      <Cell layer={beginning} />
+    </div>
     {new Array(8).fill(null).map((_, i) => {
-      const index = 8 - i - 1
+      const index = i
       const layerIn = emergeWithin[index]
       const layerOut = emergeOutOf[index]
       if (!layerIn || !layerOut) throw new Error('Unreachable')
@@ -15,17 +18,14 @@ export const App: FC = () => (
         </div>
       )
     })}
-    <div className="beginning">
-      <Cell layer={beginning} />
-    </div>
-    <div className="existence" />
+    {/* <div className="existence" />
     <div className="time">
       <div className="arrowhead" />
       <div className="label">time</div>
     </div>
     <div className="physicality">
       <div className="label">you are here</div>
-    </div>
+    </div> */}
   </div>
 )
 

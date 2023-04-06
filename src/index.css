@@ -29,7 +29,7 @@ body {
   padding: 80px 40px 120px;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -38,7 +38,10 @@ body {
   margin-bottom: calc(var(--whitespace) * 1.2);
 
   display: flex;
+  flex-direction: column;
   gap: 90px;
+
+  border: 1px solid blue;
 }
 
 /* for line of physicality */
@@ -53,6 +56,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  border: 1px solid red;
 }
 
 .cell .media {
@@ -91,7 +96,23 @@ body {
   tuning
 */
 
-.organ-isms .media {
+.beginning {
+  margin-top: 40px;
+}
+.beginning .membrane {
+  background: black;
+  padding: 10px;
+}
+.beginning .media {
+  width: calc(var(--media-width) * 2.2);
+}
+.beginning .label {
+  width: 100%;
+  top: calc(100% + 1.5rem);
+  text-align: center;
+}
+
+/* .organ-isms .media {
   transform: scale(1.17);
   right: -0.7rem;
 }
@@ -115,6 +136,7 @@ body {
   height: calc(var(--media-width) * 0.81);
   transform: scale(1.1);
   right: -0.2rem;
+  bottom: -1rem;
 }
 
 .geomes .media {
@@ -151,20 +173,7 @@ body {
   transform: scale(1.15);
   left: -0.5rem;
   bottom: -0.2rem;
-}
-
-.beginning {
-  margin-top: 40px;
-}
-.beginning .membrane {
-  background: black;
-  padding: 10px;
-}
-.beginning .label {
-  width: 100%;
-  top: calc(100% + 1.5rem);
-  text-align: center;
-}
+} */
 
 /*
   lines
