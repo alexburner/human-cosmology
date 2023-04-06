@@ -23,30 +23,34 @@ body {
 }
 
 .container {
-  position: relative;
-  width: 509px; /* hacks lol */
-  margin: 60px auto;
-  padding: 80px 40px 120px;
+  position: fixed;
+  /* width: 509px; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+
+  /* border: 1px solid magenta; */
 }
 
 .row {
   position: relative;
-  margin-bottom: calc(var(--whitespace) * 1.2);
 
   display: flex;
-  flex-direction: column;
-  gap: 90px;
+  flex-direction: row;
+  gap: 20px;
 
-  border: 1px solid blue;
-}
-
-/* for line of physicality */
-.row:first-child {
-  margin-bottom: 60px;
+  /* border: 1px solid blue; */
 }
 
 .cell {
@@ -57,7 +61,7 @@ body {
   flex-direction: column;
   justify-content: center;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .cell .media {
@@ -71,45 +75,50 @@ body {
 }
 
 .cell .label {
-  width: 120px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  width: 100%;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
 
   text-transform: lowercase;
   text-align: center;
 
-  --label-padding: 2.5rem;
+  --label-padding: 0.75rem;
 }
 
-.cell.left .label {
-  right: calc(100% + var(--label-padding));
-  text-align: right;
+.row:first-child .cell .label {
+  /* bottom: calc(100% + var(--label-padding)); */
+  padding-bottom: calc(var(--label-padding) * 1.5);
 }
 
-.cell.right .label {
-  left: calc(100% + var(--label-padding));
-  text-align: left;
+.row:last-child .cell .label {
+  /* top: calc(100% + var(--label-padding)); */
+  padding-top: var(--label-padding);
 }
 
 /*
   tuning
 */
-
 .beginning {
-  margin-top: 40px;
+  margin-right: 60px;
 }
 .beginning .membrane {
   background: black;
   padding: 10px;
 }
 .beginning .media {
-  width: calc(var(--media-width) * 2.2);
+  width: calc(var(--media-width) * 2);
 }
 .beginning .label {
-  width: 100%;
+  display: none;
+  /* width: 100%;
   top: calc(100% + 1.5rem);
-  text-align: center;
+  text-align: center; */
+}
+
+.organs {
+  margin-top: -1%;
+  transform: scale(0.88);
 }
 
 /* .organ-isms .media {

@@ -6,18 +6,32 @@ export const App: FC = () => (
     <div className="beginning">
       <Cell layer={beginning} />
     </div>
-    {new Array(8).fill(null).map((_, i) => {
-      const index = i
-      const layerIn = emergeWithin[index]
-      const layerOut = emergeOutOf[index]
-      if (!layerIn || !layerOut) throw new Error('Unreachable')
-      return (
-        <div key={i} className="row">
-          <Cell side="left" layer={layerIn} />
-          <Cell side="right" layer={layerOut} />
-        </div>
-      )
-    })}
+    <div className="rows">
+      <div className="row">
+        {emergeWithin.map((layer) => (
+          <div key={layer.name} className={`cell ${classerize(layer.name)}`}>
+            <div className="membrane">
+              <div className="label">{layer.name}</div>
+              <div className="media">
+                <img src={layer.src} alt={layer.name} />
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="row">
+        {emergeOutOf.map((layer) => (
+          <div key={layer.name} className={`cell ${classerize(layer.name)}`}>
+            <div className="membrane">
+              <div className="media">
+                <img src={layer.src} alt={layer.name} />
+              </div>
+            </div>
+            <div className="label">{layer.name}</div>
+          </div>
+        ))}
+      </div>
+    </div>
     {/* <div className="existence" />
     <div className="time">
       <div className="arrowhead" />
@@ -31,9 +45,9 @@ export const App: FC = () => (
 
 const Cell: FC<{
   layer: Layer
-  side?: 'left' | 'right'
-}> = ({ layer, side = '' }) => (
-  <div className={`cell ${classerize(layer.name)} ${side}`}>
+  // side?: 'left' | 'right'
+}> = ({ layer }) => (
+  <div className={`cell ${classerize(layer.name)}`}>
     <div className="membrane">
       <div className="media">
         <img src={layer.src} alt={layer.name} />
