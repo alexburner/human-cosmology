@@ -29,11 +29,11 @@ export const emergeWithin: Layer[] = [
     src: 'https://i.imgur.com/PndOZkHl.jpg',
   },
   {
-    name: 'Organ-isms',
+    name: 'Organisms',
     src: 'https://i.imgur.com/x0NHI6a.jpg',
   },
   {
-    name: 'Conscious Groups',
+    name: 'Group networks',
     src: 'https://i.imgur.com/THRZGmdl.jpg',
   },
 ]
@@ -68,7 +68,7 @@ export const emergeOutOf: Layer[] = [
     src: 'https://i.imgur.com/30FyINjl.png',
   },
   {
-    name: 'Conscious Individuals',
+    name: 'Self networks',
     src: 'https://i.imgur.com/QsglWCnl.png',
   },
 ]

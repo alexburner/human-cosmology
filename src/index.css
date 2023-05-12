@@ -25,7 +25,7 @@ body {
 .container {
   position: relative;
   width: 509px; /* hacks lol */
-  margin: 60px auto;
+  margin: 40px auto;
   padding: 80px 40px 120px;
 
   display: flex;
@@ -91,7 +91,7 @@ body {
   tuning
 */
 
-.organ-isms .media {
+.organisms .media {
   transform: scale(1.17);
   right: -0.7rem;
 }
@@ -126,6 +126,10 @@ body {
 .biomolecules .media {
   height: calc(var(--media-width) * 0.92);
   top: -0.4rem;
+}
+
+.molecules .media img {
+  transform: scale(0.97);
 }
 
 .conscious-individuals .media img {

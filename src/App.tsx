@@ -20,8 +20,8 @@ export const App: FC = () => (
     </div>
     <div className="existence" />
     <div className="time">
-      <div className="arrowhead" />
-      <div className="label">time</div>
+      {/* <div className="arrowhead" /> */}
+      {/* <div className="label">time</div> */}
     </div>
     <div className="physicality">
       <div className="label">you are here</div>
