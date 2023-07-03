@@ -33,7 +33,7 @@ export const emergeWithin: Layer[] = [
     src: 'https://i.imgur.com/x0NHI6a.jpg',
   },
   {
-    name: 'Group networks',
+    name: 'Collectives',
     src: 'https://i.imgur.com/THRZGmdl.jpg',
   },
 ]
@@ -68,12 +68,12 @@ export const emergeOutOf: Layer[] = [
     src: 'https://i.imgur.com/30FyINjl.png',
   },
   {
-    name: 'Self networks',
+    name: 'Individuals',
     src: 'https://i.imgur.com/QsglWCnl.png',
   },
 ]
 
 export const beginning: Layer = {
-  name: 'Big Bang',
+  name: 'Big Bloom',
   src: 'https://i.imgur.com/O8jn5ecl.jpg',
 }
