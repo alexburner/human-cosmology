@@ -91,7 +91,7 @@ body {
   tuning
 */
 
-.organisms .media {
+.heterotrophs .media {
   transform: scale(1.17);
   right: -0.7rem;
 }
@@ -105,7 +105,7 @@ body {
   margin-top: -4%;
 }
 
-.biomes .media {
+.autotrophs .media {
   height: calc(var(--media-width) * 0.81);
   transform: scale(1.1);
   right: -0.2rem;
@@ -117,7 +117,7 @@ body {
   right: -0.2rem;
 }
 
-.geomes .media {
+.physiotopes .media {
   transform: scale(1.1);
   right: -0.3rem;
   bottom: -0.5rem;
@@ -147,11 +147,11 @@ body {
   margin-top: -10%;
 }
 
-.particles .media {
+.particle-fields .media {
   transform: scale(1.05);
 }
 
-.quantum-foam .media {
+.quantum-realm .media {
   transform: scale(1.15);
   left: -0.5rem;
   bottom: -0.2rem;

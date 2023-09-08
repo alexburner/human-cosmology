@@ -21,15 +21,15 @@ export const emergeWithin: Layer[] = [
     src: 'https://i.imgur.com/a4BztpZ.png',
   },
   {
-    name: 'Geomes',
+    name: 'Physiotopes',
     src: 'https://i.imgur.com/McQ7aIB.png',
   },
   {
-    name: 'Biomes',
+    name: 'Autotrophs',
     src: 'https://i.imgur.com/PndOZkHl.jpg',
   },
   {
-    name: 'Organisms',
+    name: 'Heterotrophs',
     src: 'https://i.imgur.com/x0NHI6a.jpg',
   },
   {
@@ -38,13 +38,17 @@ export const emergeWithin: Layer[] = [
   },
 ]
 
+/**
+ * Note: matching .css classes too
+ * 'Quantum Foam' -> .quantum-foam
+ */
 export const emergeOutOf: Layer[] = [
   {
-    name: 'Quantum Foam',
+    name: 'Quantum Realm',
     src: 'https://i.imgur.com/XR10nQcl.jpg',
   },
   {
-    name: 'Particles',
+    name: 'Particle fields',
     src: 'https://i.imgur.com/pbVA6kE.jpg',
   },
   {
