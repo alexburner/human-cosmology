@@ -6,7 +6,7 @@ export interface Layer {
 export const emergeWithin: Layer[] = [
   {
     name: 'Cosmic Web',
-    src: 'https://i.imgur.com/jNZgrVbl.jpg',
+    src: 'https://i.imgur.com/qqNWGuo.jpg',
   },
   {
     name: 'Galaxies',
@@ -14,7 +14,7 @@ export const emergeWithin: Layer[] = [
   },
   {
     name: 'Stars',
-    src: 'https://i.imgur.com/YqSq9pAl.png',
+    src: 'https://i.imgur.com/Fuiidlr.jpg',
   },
   {
     name: 'Planets',
@@ -44,11 +44,11 @@ export const emergeWithin: Layer[] = [
  */
 export const emergeOutOf: Layer[] = [
   {
-    name: 'Quantum Realm',
+    name: 'Quantum foam',
     src: 'https://i.imgur.com/XR10nQcl.jpg',
   },
   {
-    name: 'Particle fields',
+    name: 'Particles',
     src: 'https://i.imgur.com/pbVA6kE.jpg',
   },
   {
@@ -72,7 +72,7 @@ export const emergeOutOf: Layer[] = [
     src: 'https://i.imgur.com/30FyINjl.png',
   },
   {
-    name: 'Individuals',
+    name: 'Selves',
     src: 'https://i.imgur.com/QsglWCnl.png',
   },
 ]
