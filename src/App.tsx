@@ -10,8 +10,8 @@ export const App: FC = () => (
       if (!layerIn || !layerOut) throw new Error('Unreachable')
       return (
         <div key={i} className="row">
-          <Cell side="left" layer={layerIn} />
-          <Cell side="right" layer={layerOut} />
+          <Cell side="left" layer={layerOut} />
+          <Cell side="right" layer={layerIn} />
         </div>
       )
     })}
@@ -24,7 +24,7 @@ export const App: FC = () => (
       {/* <div className="label">time</div> */}
     </div>
     <div className="physicality">
-      <div className="label">you are here</div>
+      <div className="label">line of physicality</div>
     </div>
   </div>
 )
