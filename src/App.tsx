@@ -18,7 +18,10 @@ export const App: FC = () => (
     <div className="beginning">
       <Cell layer={beginning} />
     </div>
-    <div className="existence" />
+    <div className="existence">
+      <div className="label left">line of</div>
+      <div className="label right">beginning</div>
+    </div>
     <div className="time">
       {/* <div className="arrowhead" /> */}
       {/* <div className="label">time</div> */}

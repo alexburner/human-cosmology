@@ -48,7 +48,7 @@ body {
 
 .cell {
   position: relative;
-  background: #fff;
+  /* background: #fff; */
 
   display: flex;
   flex-direction: column;
@@ -98,7 +98,7 @@ body {
 
 .organs .media {
   margin-top: -4%;
-  transform: scale(0.87);
+  transform: scale(0.92);
   height: calc(var(--media-width) * 1.31);
 }
 .organs .media img {
@@ -115,6 +115,7 @@ body {
   height: calc(var(--media-width) * 0.81);
   transform: scale(1.1);
   right: -0.2rem;
+  bottom: -0.125rem;
 }
 
 .geomes .media {
@@ -161,6 +162,10 @@ body {
   bottom: -0.2rem;
 }
 
+/*
+  beginning
+*/
+
 .beginning {
   margin-top: 60px;
 }
@@ -170,8 +175,11 @@ body {
 }
 .beginning .label {
   width: 100%;
-  top: calc(100% + 1.5rem);
+  top: calc(100% + 1rem);
   text-align: center;
+}
+.beginning .cell .membrane {
+  transform: scale(0.9);
 }
 
 /*
@@ -193,7 +201,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 2px 8px 4px;
+  padding: 2px 6px 4px;
   background: white;
 
   /* font-style: italic; */
@@ -203,11 +211,34 @@ body {
 .existence {
   position: absolute;
   z-index: -1;
-  bottom: 363px;
+  bottom: 244px;
   left: -30%;
   right: -30%;
   height: 1px;
   border-bottom: 1px dashed #333;
+}
+
+.existence .label {
+  position: absolute;
+  padding: 2px 6px 4px;
+  background: white;
+  /* font-style: italic; */
+  font-size: 14px;
+
+  /* ? */
+  display: none;
+}
+
+.existence .label.left {
+  top: 50%;
+  left: 32%;
+  transform: translateY(-50%);
+}
+
+.existence .label.right {
+  top: 50%;
+  right: 29%;
+  transform: translateY(-50%);
 }
 
 .time {
