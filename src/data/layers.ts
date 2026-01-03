@@ -21,19 +21,19 @@ export const emergeWithin: Layer[] = [
     src: 'https://i.imgur.com/a4BztpZ.png',
   },
   {
-    name: 'Geomes',
+    name: 'Physiotopes',
     src: 'https://i.imgur.com/McQ7aIB.png',
   },
   {
-    name: 'Biomes',
+    name: 'Autotrophs',
     src: 'https://i.imgur.com/PndOZkHl.jpg',
   },
   {
-    name: 'Organ-isms',
+    name: 'Heterotrophs',
     src: 'https://i.imgur.com/x0NHI6a.jpg',
   },
   {
-    name: 'Conscious Groups',
+    name: 'Groups',
     src: 'https://i.imgur.com/THRZGmdl.jpg',
   },
 ]
@@ -68,12 +68,12 @@ export const emergeOutOf: Layer[] = [
     src: 'https://i.imgur.com/30FyINjl.png',
   },
   {
-    name: 'Conscious Individuals',
+    name: 'Individuals',
     src: 'https://i.imgur.com/QsglWCnl.png',
   },
 ]
 
 export const beginning: Layer = {
-  name: 'Big Bang',
+  name: 'Big Bloom',
   src: 'https://i.imgur.com/O8jn5ecl.jpg',
 }

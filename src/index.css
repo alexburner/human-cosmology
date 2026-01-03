@@ -25,7 +25,7 @@ body {
 .container {
   position: relative;
   width: 509px; /* hacks lol */
-  margin: 60px auto;
+  margin: 10px auto;
   padding: 80px 40px 120px;
 
   display: flex;
@@ -91,7 +91,7 @@ body {
   tuning
 */
 
-.organ-isms .media {
+.heterotrophs .media {
   transform: scale(1.17);
   right: -0.7rem;
 }
@@ -105,7 +105,7 @@ body {
   margin-top: -4%;
 }
 
-.biomes .media {
+.autotrophs .media {
   height: calc(var(--media-width) * 0.81);
   transform: scale(1.1);
   right: -0.2rem;
@@ -117,7 +117,7 @@ body {
   right: -0.2rem;
 }
 
-.geomes .media {
+.physiotopes .media {
   transform: scale(1.1);
   right: -0.3rem;
   bottom: -0.5rem;
@@ -128,11 +128,11 @@ body {
   top: -0.4rem;
 }
 
-.conscious-individuals .media img {
+.individuals .media img {
   transform: scale(0.99);
 }
 
-.conscious-groups .media img {
+.groups .media img {
   transform: scale(1.5);
 }
 
@@ -188,7 +188,8 @@ body {
   padding: 2px 8px 4px;
   background: white;
 
-  font-style: italic;
+  /* font-style: italic; */
+  font-size: 14px;
 }
 
 .existence {
